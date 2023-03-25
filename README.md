@@ -98,7 +98,9 @@ The transformation used the Text.BeforeDelimiter and Text.AfterDelimiter functio
  
  
  
-## Height and Weight columns Transformation
+ 
+ 
+# Height and Weight columns Transformation
 
 The “Height” column and “Weight” column contain data that needed to be converted to a consistent unit of measurement.
 
@@ -106,7 +108,7 @@ The “Height” column and “Weight” column contain data that needed to be c
 ![](height.png)
 
 
-# Height column
+## Height column
 
 The Height column has some data in centimeters (cm) and some in feet and Inches (ft&in). The aim of this transformation is to convert the “ft” and “in”  to “cm”. The steps to achieve this are the following.
 
@@ -121,7 +123,7 @@ The above steps are done by this query:
 `If Text.contains([Height],”cm”) then Number.From(Text.BeforeDelimiter([Height], “cm”)) else Number.Round(NUmber.FromText(Text.BeforeDelimiter([Height], “‘“))*30.48 + Number.FromText(Text.AfterDelimiter([Height],”’”))*2.52)`
 
 
-# Weight column
+## Weight column
 
 Some values were in Kilogram (kg) and some in Pounds (lbs). The aim is to convert values in (Kg) to (lbs). To achieve this the following steps were taken:
 
@@ -133,10 +135,47 @@ Here is the query to achieve this:
 
 `If Text.contains([Weight], “kg”) then Number.Text(Text.BeforeDelimiter([Weight],”kg”))*2.205 else Number.From(Text.BeforeDelimiter([Weight],”lbs”))`
 
+
+
 ![](clean_Height.png)                   ![](clean_weight.png)
 
 
-Both column are cleaned and accurate by ensuring all values have the same unit of measurements in order to aid further analysis.
+
+Both columns are cleaned and accurate by ensuring all values have the same unit of measurements in order to aid further analysis.
+
+
+
+
+
+# Values Wages and Release clause columns
+
+Date in these columns contained the Euro (€) sign and values were entered in different formats. The following steps were taken to clean the data:
+
+1. The Euro sign was removed from the Value, Wages, and Release Clause columns using the Text.Replace function.
+2. The values were then converted to numeric format using the Number.FromText function.
+3. The values were converted to their respective units, i.e., M for million and K for thousand, as follows:
+4. Values in millions were represented by M (e.g., 1.6M instead of 1600000).
+5. Values in thousands were represented by K (e.g., 2K instead of 2000).
+6. Finally, the values were converted to Dollar ($)
+
+
+The following code was used to implement these changes:
+
+## Player Value
+
+
+`Let
+
+Replace_Euro = Text. Replace ([Value], “€”, “”),
+Covert_value = if Text.contains([Replace_Euro], “M”) then Number.FromText(Text.BeforeDelimiter([Replace_Euro], “M”)) *1000000 else if Text.contains([Replace_Euro],”K”) then Number.FromText(Text.BeforeDelimiter(Replace_Euro],”K”))*1000 else Number.FromText([Replace_Euro])
+
+In
+Convert_value *1.06`
+
+
+
+
+
 
 
 
