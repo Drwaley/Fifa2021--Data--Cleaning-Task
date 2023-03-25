@@ -170,12 +170,41 @@ The following code was used to implement these changes:
 Let
 
 Replace_Euro = Text. Replace ([Value], “€”, “”),
-Covert_value = if Text.contains([Replace_Euro], “M”) then Number.FromText(Text.BeforeDelimiter([Replace_Euro], “M”)) *1000000 else if Text.contains([Replace_Euro],”K”) then Number.FromText(Text.BeforeDelimiter(Replace_Euro],”K”))*1000 else Number.FromText([Replace_Euro])
+Convert_value = if Text.contains([Replace_Euro], “M”) then Number.FromText(Text.BeforeDelimiter([Replace_Euro], “M”)) *1000000 else if Text.contains([Replace_Euro],”K”) then Number.FromText(Text.BeforeDelimiter(Replace_Euro],”K”))*1000 else Number.FromText([Replace_Euro])
 
 In
 Convert_value *1.06
 
 ```
+
+## Player Wages
+
+```
+Let
+
+Replace_Euro = Text. Replace ([Wage], “€”, “”),
+Convert_value = if Text.contains([Replace_Euro], “K”) then Number.FromText(Text.BeforeDelimiter([Replace_Euro], “K”)) *1000 else Number.FromText([Replace_Euro])
+
+in
+
+Convert_value * 1.06
+
+```
+
+## Player Release Clauses
+
+```
+Let
+
+Replace_Euro = Text. Replace ([Release clause], “€”, “”),
+Convert_value = if Text.contains([Replace_Euro], “M”) then Number.FromText(Text.BeforeDelimiter([Replace_Euro], “M”)) *1000000 else if Text.contains([Replace_Euro],”K”) then Number.FromText(Text.BeforeDelimiter(Replace_Euro],”K”))*1000 else Number.FromText([Replace_Euro])
+
+In
+Convert_value *1.06
+
+```
+
+
 
 
 
