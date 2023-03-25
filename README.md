@@ -1,5 +1,7 @@
 # Fifa2021-Data-Cleaning-Task
 
+![](
+
 ## Introduction
 
 This documentation entails the Data cleaning process of the FIFA 21 data set, sourced [kaggle.com](https://www.kaggle.com/) The raw data; **“fifa21 raw data v2.csv”** was used for the Data cleaning task. Power Query Editor for PowerBi was used to complete this process.
@@ -164,13 +166,16 @@ The following code was used to implement these changes:
 ## Player Value
 
 
-`Let
+```
+Let
 
 Replace_Euro = Text. Replace ([Value], “€”, “”),
 Covert_value = if Text.contains([Replace_Euro], “M”) then Number.FromText(Text.BeforeDelimiter([Replace_Euro], “M”)) *1000000 else if Text.contains([Replace_Euro],”K”) then Number.FromText(Text.BeforeDelimiter(Replace_Euro],”K”))*1000 else Number.FromText([Replace_Euro])
 
 In
-Convert_value *1.06`
+Convert_value *1.06
+
+```
 
 
 
