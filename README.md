@@ -107,6 +107,9 @@ The transformation used the Text.BeforeDelimiter and Text.AfterDelimiter functio
 The “Height” column and “Weight” column contain data that needed to be converted to a consistent unit of measurement.
 
 
+**Unclean Height and Weight Columns**
+
+
 ![](height.png)
 
 
@@ -138,6 +141,8 @@ Here is the query to achieve this:
 `If Text.contains([Weight], “kg”) then Number.Text(Text.BeforeDelimiter([Weight],”kg”))*2.205 else Number.From(Text.BeforeDelimiter([Weight],”lbs”))`
 
 
+
+## Cleaned Height and weight columns :smiley:
 
 ![](clean_Height.png)                   ![](clean_weight.png)
 
@@ -177,6 +182,12 @@ Convert_value *1.06
 
 ```
 
+ ## *Before and After Preview*
+ 
+ 
+![](new_value.png)            ![](clean_playervalue.png)
+
+
 ## Player Wages
 
 ```
@@ -191,6 +202,15 @@ Convert_value * 1.06
 
 ```
 
+
+## *Before and After Preview*
+   
+   
+
+![](new_wage.png)              ![](clean_wage.png)
+
+
+
 ## Player Release Clauses
 
 ```
@@ -203,6 +223,49 @@ In
 Convert_value *1.06
 
 ```
+
+
+
+## *Before and After preview*
+
+![](new_clause.png)                               ![](clean_Rclause.png)
+
+
+
+## W/F,SM and IR columns Transformation
+
+These three columns has star "★" synbol added to the values. I replaced the star with blank by using replace value function then change the data type to whole number. Therefore, the column is cleaned and tarnsformed to be used for analysis.
+
+
+## Before
+
+![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/unclean_SM_WF_IR.png)       
+
+
+
+## After
+
+![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/clean_SM_WF_IR.png)
+
+
+## Hits column Transfromation
+
+The Hits column has a single inconsistency (i.e it has a value represented has 1.6k instead of 1600). To fix this, the "K" is replaced with blank and the vlue is multiplied by 1000 thereby given the resdulting figure.
+
+
+
+## *Before and After Preview* 
+
+![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/unclean_Hits.png)           ![](clean_Hits.png)
+
+
+
+## Summary :bowtie:
+
+
+This project highlight the importance of thorough data cleaning process which is pertinent in Data Analytics. The data were properly cleanse, standardized and improved to be ready for further analysis, modelling and Visualization.
+
+
 
 
 
