@@ -29,10 +29,32 @@ The original URL links contain an error that made the link invalid, and unable t
 To fix the error, I corrected the link by replacing **“.com” and “_60”**  with **“.net” and “_240”** using replace value function.  For example, ([corrected link](https://cdn.sofifa.net/players/158/023/21_240.png)) - valid.
 
 
-## Before
+## Before and After preview
 
-:-----------------------------:                                                                  
 
-![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/unclean_photo_url.png) ![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/clean_photo_url.png)
+![](unclean_photo_url.png) ![](clean_photo_url.png)
+
+
+By fixing the error, the photo url column is cleaned and improved to serve its purpose
+
+
+
+## OVA, POT, and BOV Transformation
+
+These columns contain values that are meant to be in percentage. However, each column represented the values as text data types. Therefore, I converted the values in each column to percentages by dividing the values by 100 and changed the data type to percentage measures. [_see the preview below_] :point_down:
+
+**Uncleaned columns** :confused:
+
+![](unclean_Ova_pot_Bov.png)
+
+
+ **Cleaned columns** :blush:
+
+![](clean_Ova_pot_Bov.png)
+
+By applying this transformation, the columns are cleaned, accurate, and useful for analysis.
+
+
+
 
 
