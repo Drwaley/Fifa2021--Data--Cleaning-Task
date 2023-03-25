@@ -97,6 +97,55 @@ The transformation used the Text.BeforeDelimiter and Text.AfterDelimiter functio
  
  
  
+ 
+## Height and Weight columns Transformation
+
+The “Height” column and “Weight” column contain data that needed to be converted to a consistent unit of measurement.
+
+
+![](height.png)
+
+
+# Height column
+
+The Height column has some data in centimeters (cm) and some in feet and Inches (ft&in). The aim of this transformation is to convert the “ft” and “in”  to “cm”. The steps to achieve this are the following.
+
+1. Extract the ft and in from the column using Text. contains function
+2. Separated the feet and inches values using Delimiters functions
+3. Covert the feet value to Centimeter by multiplying by 30.48 (Standard Unit)
+4. Convert Inch value  to Centimeter by multiplying by 2.54 ( Standard Unit)
+5. Sum the converted Feet and Inches to get the final Height in centimeters(cm)
+
+The above steps are done by this query:
+
+`If Text.contains([Height],”cm”) then Number.From(Text.BeforeDelimiter([Height], “cm”)) else Number.Round(NUmber.FromText(Text.BeforeDelimiter([Height], “‘“))*30.48 + Number.FromText(Text.AfterDelimiter([Height],”’”))*2.52)`
+
+
+# Weight column
+
+Some values were in Kilogram (kg) and some in Pounds (lbs). The aim is to convert values in (Kg) to (lbs). To achieve this the following steps were taken:
+
+1. Extract the values in Kg by Text.contains functions
+2. Covert the extracted values by multiplying them by 2.205 (Standard Unit)
+
+
+Here is the query to achieve this:
+
+`If Text.contains([Weight], “kg”) then Number.Text(Text.BeforeDelimiter([Weight],”kg”))*2.205 else Number.From(Text.BeforeDelimiter([Weight],”lbs”))`
+
+![](clean_Height.png)                   ![](clean_weight.png)
+
+
+Both column are cleaned and accurate by ensuring all values have the same unit of measurements in order to aid further analysis.
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
 
  
  
