@@ -260,11 +260,14 @@ The Hits column has a single inconsistency (i.e it has a value represented has 1
 
 
 
-## Summary :bowtie:
+## Summary :sunglasses:
 
 
 This project highlight the importance of thorough data cleaning process which is pertinent in Data Analytics. The data were properly cleanse, standardized and improved to be ready for further analysis, modelling and Visualization.
 
+
+
+![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/Thank%20you.png)
 
 
 
