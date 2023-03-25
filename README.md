@@ -58,3 +58,55 @@ By applying this transformation, the columns are cleaned, accurate, and useful f
 
 
 
+
+## Contract Column Transformation
+
+The “Contract” column contains the contract Start year, contract End year ( separated by “~”),  values “Free” (for players on a free transfer), and “Loan” (for players on Loan).To clean this column, the first step is to categorize the players based on their agreements with their various clubs.
+
+
+ _The preview below shows the original contract column before transformation
+
+![](unclean_Contarct.png)                                                                                    ![](unclean_free_loan.png)
+
+ An “Agreement” column was created to show the agreement terms of the players (i.e Players on 'contract' or 'free' or loan').   _See the preview below_:point_down:
+ 
+ 
+ ![](Agreement.png)
+ 
+ 
+Then, another column was created to show the Duration years of the players with contracts only. This transformation is applied by subtracting the start years from the end years. 
+
+
+
+
+This was done using the query below:
+
+`If Text.contains([contract], “~”) then Number.from(Text.AfterDelimiter([contract], “~”)) - Number.From(Text.BeforeDelimiter([contract],”~”)) else [Agreement]`
+
+
+
+
+The transformation used the Text.BeforeDelimiter and Text.AfterDelimiter functions to extract the contract years and find the difference to give the Duration years of each player on contract.
+
+                 
+ ![](clean_contract.png)                                                                                                      ![](Duration.png)
+ 
+ 
+ 
+ By applying these transformations, the “contract” column was cleaned and standardized to include the agreement terms( “contract” or“Free” or “Loan”) and contract duration years of each player which improved the quality of the data.
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
