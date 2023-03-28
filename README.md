@@ -34,10 +34,10 @@ The original URL links contain an error that made the link invalid, and unable t
 To fix the error, I corrected the link by replacing **“.com” and “_60”**  with **“.net” and “_240”** using replace value function.  For example, ([corrected link](https://cdn.sofifa.net/players/158/023/21_240.png)) - valid.
 
 
-## Before and After preview
 
-
-![](unclean_photo_url.png) ![](clean_photo_url.png)
+Before                    | After
+:------------------------:|:----------------------:
+![](unclean_photo_url.png)| ![](clean_photo_url.png)
 
 
 By fixing the error, the photo url column is cleaned and improved to serve its purpose
@@ -48,14 +48,15 @@ By fixing the error, the photo url column is cleaned and improved to serve its p
 
 These columns contain values that are meant to be in percentage. However, each column represented the values as text data types. Therefore, I converted the values in each column to percentages by dividing the values by 100 and changed the data type to percentage measures. [_see the preview below_] :point_down:
 
-**Uncleaned columns** :confused:
-
-![](unclean_Ova_pot_Bov.png)
 
 
- **Cleaned columns** :blush:
+Before :confused:           | After  :blush:
+:--------------------------:|:------------------------:
+![](unclean_Ova_pot_Bov.png)| ![](clean_Ova_pot_Bov.png)
 
-![](clean_Ova_pot_Bov.png)
+
+
+
 
 By applying this transformation, the columns are cleaned, accurate, and useful for analysis.
 
@@ -69,11 +70,14 @@ By applying this transformation, the columns are cleaned, accurate, and useful f
 The “Contract” column contains the contract Start year, contract End year ( separated by “~”),  values “Free” (for players on a free transfer), and “Loan” (for players on Loan).To clean this column, the first step is to categorize the players based on their agreements with their various clubs.
 
 
- _The preview below shows the original contract column before transformation
+ _The preview below shows the original contract column before transformation_
+ 
+ Before                      | After 
+ :--------------------------:|:------------------------:
+ ![](unclean_Contarct.png)   |  ![](unclean_free_loan.png)
 
-![](unclean_Contarct.png)                                                                                    ![](unclean_free_loan.png)
 
- An “Agreement” column was created to show the agreement terms of the players (i.e Players on 'contract' or 'free' or loan').   _See the preview below_:point_down:
+ An “Agreement” column was created using conditional column to show the agreement terms of the players (i.e Players on 'contract' or 'free' or loan').   _See the preview below_:point_down:
  
  
  ![](Agreement.png)
@@ -93,8 +97,10 @@ This was done using the query below:
 
 The transformation used the Text.BeforeDelimiter and Text.AfterDelimiter functions to extract the contract years and find the difference to give the Duration years of each player on contract.
 
-                 
- ![](clean_contract.png)                                                                                                      ![](Duration.png)
+
+Before                      |  After
+:--------------------------:|:--------------------:  
+ ![](clean_contract.png)    | ![](Duration.png)
  
  
  
