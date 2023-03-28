@@ -72,12 +72,17 @@ The “Contract” column contains the contract Start year, contract End year ( 
 
  _The preview below shows the original contract column before transformation_
  
- Before                      | After 
- :--------------------------:|:------------------------:
- ![](unclean_Contarct.png)   |  ![](unclean_free_loan.png)
+                              
+    
+![](unclean_Contarct.png)   ![](unclean_free_loan.png)
 
 
  An “Agreement” column was created using conditional column to show the agreement terms of the players (i.e Players on 'contract' or 'free' or loan').   _See the preview below_:point_down:
+ 
+ 
+ ![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/Conditional_Column_Agreement.PNG)
+ 
+ Then, the Agreement column was created 
  
  
  ![](Agreement.png)
@@ -153,7 +158,9 @@ Here is the query to achieve this:
 
 ## Cleaned Height and weight columns :smiley:
 
-![](clean_Height.png)                   ![](clean_weight.png)
+                         
+
+![](clean_Height.png)      ![](clean_weight.png)
 
 
 
@@ -191,10 +198,10 @@ Convert_value *1.06
 
 ```
 
- ## *Before and After Preview*
  
- 
-![](new_value.png)            ![](clean_playervalue.png)
+ Before                   | After
+:------------------------:|:--------------------------:
+![](new_value.png)        | ![](clean_playervalue.png)
 
 
 ## Player Wages
@@ -212,11 +219,11 @@ Convert_value * 1.06
 ```
 
 
-## *Before and After Preview*
-   
-   
 
-![](new_wage.png)              ![](clean_wage.png)
+   
+   Before                 |  After
+:------------------------:|:-----------------------:
+  ![](new_wage.png)       |   ![](clean_wage.png)
 
 
 
@@ -235,9 +242,9 @@ Convert_value *1.06
 
 
 
-## *Before and After preview*
-
-![](new_clause.png)                               ![](clean_Rclause.png)
+Before                    | After
+:------------------------:|:-----------------------:
+ ![](new_clause.png)      |  ![](clean_Rclause.png)
 
 
 
@@ -246,15 +253,11 @@ Convert_value *1.06
 These three columns has star "★" synbol added to the values. I replaced the star with blank by using replace value function then change the data type to whole number. Therefore, the column is cleaned and tarnsformed to be used for analysis.
 
 
-## Before
+Before                    | After
+:------------------------:|:-----------------------:
+![](unclean_SM_WF_IR.png) |  ![](clean_SM_WF_IR.png)    
 
-![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/unclean_SM_WF_IR.png)       
 
-
-
-## After
-
-![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/clean_SM_WF_IR.png)
 
 
 ## Hits column Transfromation
@@ -263,9 +266,9 @@ The Hits column has a single inconsistency (i.e it has a value represented has 1
 
 
 
-## *Before and After Preview* 
-
-![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/unclean_Hits.png)           ![](clean_Hits.png)
+Before                    |  After
+:------------------------:|:-----------------------:
+ ![](unclean_Hits.png)    |   ![](clean_Hits.png)
 
 
 
