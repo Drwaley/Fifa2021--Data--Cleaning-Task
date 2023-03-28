@@ -1,7 +1,7 @@
 # Fifa2021-Data-Cleaning-Task
 
 
-<img src = "https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/fifa_into.png" width = "1780" height= "500">
+<img src = "https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/intro_image.png" width = "1780" height= "500">
 
 
 ## Introduction
