@@ -250,7 +250,7 @@ Before                    | After
 
 ## W/F,SM and IR columns Transformation
 
-These three columns has star "★" synbol added to the values. I replaced the star with blank by using replace value function then change the data type to whole number. Therefore, the column is cleaned and tarnsformed to be used for analysis.
+These three columns has star "★" symbol added to the values. I replaced the star with blank by using replace value function then change the data type to whole number. Therefore, the column is cleaned and tarnsformed to be used for analysis.
 
 
 Before                    | After
@@ -262,7 +262,7 @@ Before                    | After
 
 ## Hits column Transfromation
 
-The Hits column has a single inconsistency (i.e it has a value represented has 1.6k instead of 1600). To fix this, the "K" is replaced with blank and the vlue is multiplied by 1000 thereby given the resdulting figure.
+The Hits column has a single inconsistency (i.e it has a value represented has 1.6k instead of 1600). To fix this, the "K" is replaced with blank and the vlue is multiplied by 1000 thereby given the resulting figure.
 
 
 
@@ -275,7 +275,7 @@ Before                    |  After
 ## Summary :sunglasses:
 
 
-This project highlight the importance of thorough data cleaning process which is pertinent in Data Analytics. The data were properly cleanse, standardized and improved to be ready for further analysis, modelling and Visualization.
+This project highlight the importance of thorough data cleaning process which is pertinent in Data Analytics. The data were properly cleaned, standardized and improved to be ready for further analysis, modelling and Visualization.
 
 
 
