@@ -267,15 +267,19 @@ The Hits column has a single inconsistency (i.e it has a value represented has 1
 
 
 Before                    |  After
-:------------------------:|:-----------------------:
+:------------------------:|:----------------------na-:
  ![](unclean_Hits.png)    |   ![](clean_Hits.png)
-
 
 
 ## Summary :sunglasses:
 
 
 This project highlight the importance of thorough data cleaning process which is pertinent in Data Analytics. The data were properly cleaned, standardized and improved to be ready for further analysis, modelling and Visualization.
+
+
+# Analysis and Visualization
+
+
 
 
 
