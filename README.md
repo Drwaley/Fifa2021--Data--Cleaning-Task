@@ -77,7 +77,7 @@ The “Contract” column contains the contract Start year, contract End year ( 
 ![](unclean_Contarct.png)   ![](unclean_free_loan.png)
 
 
- An “Agreement” column was created using conditional column to show the agreement terms of the players (i.e Players on 'contract' or 'free' or loan').   _See the preview below_:point_down:
+ An “Agreement” column was created using a conditional column to show the agreement terms of the players (i.e. Players on 'contract' or 'free' or loan').   _See the preview below_:point_down:
  
  
  ![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/Conditional_Column_Agreement.PNG)
@@ -164,7 +164,7 @@ Here is the query to achieve this:
 
 
 
-Both columns are cleaned and accurate by ensuring all values have the same unit of measurements in order to aid further analysis.
+Both columns are cleaned and accurate by ensuring all values have the same unit of measurement in order to aid further analysis.
 
 
 
@@ -172,14 +172,14 @@ Both columns are cleaned and accurate by ensuring all values have the same unit 
 
 # Values Wages and Release clause columns
 
-Date in these columns contained the Euro (€) sign and values were entered in different formats. The following steps were taken to clean the data:
+Data in these columns contained the Euro (€) sign and values were entered in different formats. The following steps were taken to clean the data:
 
 1. The Euro sign was removed from the Value, Wages, and Release Clause columns using the Text.Replace function.
 2. The values were then converted to numeric format using the Number.FromText function.
 3. The values were converted to their respective units, i.e., M for million and K for thousand, as follows:
 4. Values in millions were represented by M (e.g., 1.6M instead of 1600000).
 5. Values in thousands were represented by K (e.g., 2K instead of 2000).
-6. Finally, the values were converted to Dollar ($)
+6. Finally, the values were converted to Dollars ($)
 
 
 The following code was used to implement these changes:
@@ -248,9 +248,9 @@ Before                    | After
 
 
 
-## W/F,SM and IR columns Transformation
+## W/F, SM and IR columns Transformation
 
-These three columns has star "★" symbol added to the values. I replaced the star with blank by using replace value function then change the data type to whole number. Therefore, the column is cleaned and tarnsformed to be used for analysis.
+These three columns have a star "★" symbol added to the values. I replaced the star with blank by using the replace value function and then changed the data type to the whole number. Therefore, the column is cleaned and transformed to be used for analysis.
 
 
 Before                    | After
@@ -262,7 +262,7 @@ Before                    | After
 
 ## Hits column Transfromation
 
-The Hits column has a single inconsistency (i.e it has a value represented has 1.6k instead of 1600). To fix this, the "K" is replaced with blank and the vlue is multiplied by 1000 thereby given the resulting figure.
+The Hits column has a single inconsistency (i.e. it has a value represented as 1.6k instead of 1600). To fix this, the "K" is replaced with blank, and the value is multiplied by 1000 thereby giving the resulting figure.
 
 
 
@@ -274,10 +274,21 @@ Before                    |  After
 ## Summary :sunglasses:
 
 
-This project highlight the importance of thorough data cleaning process which is pertinent in Data Analytics. The data were properly cleaned, standardized and improved to be ready for further analysis, modelling and Visualization.
+This project highlights the importance of a thorough data cleaning process which is pertinent in Data Analytics. The data were properly cleaned, standardized, and improved to be ready for further analysis, modeling, and Visualization.
 
 
 # Analysis and Visualization
+
+The insight gained from this data is the following:
+
+The top ten Players with the highest wages
+Player worth by continent
+Top 5 clubs with the most valuable players
+
+
+
+
+
 
 
 
