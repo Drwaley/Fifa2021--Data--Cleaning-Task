@@ -307,7 +307,6 @@ The visualization is two-phased: The insight main phase, which contains the Anal
 
 
 
-
 ![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/Thank%20you.png)
 
 
