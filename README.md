@@ -267,23 +267,37 @@ The Hits column has a single inconsistency (i.e. it has a value represented as 1
 
 
 Before                    |  After
-:------------------------:|:----------------------na-:
+:------------------------:|:-----------------------:
  ![](unclean_Hits.png)    |   ![](clean_Hits.png)
 
 
 ## Summary :sunglasses:
 
 
-This project highlights the importance of a thorough data cleaning process which is pertinent in Data Analytics. The data were properly cleaned, standardized, and improved to be ready for further analysis, modeling, and Visualization.
+This project highlights the importance of a thorough data cleaning process, which is pertinent in Data Analytics. The data were properly cleaned, standardized, and improved to be ready for further analysis, modeling, and Visualization.
 
 
 # Analysis and Visualization
 
-The insight gained from this data is the following:
+The insights gained from this dataset are the following:
 
-The top ten Players with the highest wages
-Player worth by continent
-Top 5 clubs with the most valuable players
+- The top ten Players with the highest wages
+- Player worth by continent
+- Top 5 clubs with the most valuable players
+- Distribution of players by Agreement
+- Players values by Age range
+- Distribution of players by best position
+
+## Visualization
+
+The visualization is two-phased: The insight main phase, which contains the Analysis, and the profile phase where the players' profiles are visualized. find below the video illustration
+
+
+
+
+
+  
+
 
 
 
