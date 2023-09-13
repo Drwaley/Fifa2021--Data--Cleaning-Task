@@ -271,10 +271,7 @@ Before                    |  After
  ![](unclean_Hits.png)    |   ![](clean_Hits.png)
 
 
-## Summary :sunglasses:
 
-
-This project highlights the importance of a thorough data cleaning process, which is pertinent in Data Analytics. The data were properly cleaned, standardized, and improved to be ready for further analysis, modeling, and Visualization.
 
 
 # Analysis and Visualization
@@ -288,17 +285,30 @@ The insights gained from this dataset are the following:
 - Players values by Age range
 - Distribution of players by best position
 
-## Visualization
+# Visualization
 
-The visualization is two-phased: The insight main phase, which contains the Analysis, and the profile phase where the players' profiles are visualized. find below the video illustration 
+The visualization is two-phased: The insight main phase, which contains the Analysis, and the profile phase where the players' profiles are visualized. find below the video illustration 👇
+
+## The Dashboard
+
+![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/FIFA%20Analysis%20page.png)
+
+## The Players' Profile
+
+![](https://github.com/Drwaley/Fifa2021--Data--Cleaning-Task/blob/main/fifa%20player%20profile.png)
 
 
+
+## Summary :sunglasses:
+
+
+This project highlights the importance of a thorough data cleaning process, which is pertinent in Data Analytics. The data were properly cleaned, standardized, Analysed, and Visualized.
+
+**_NOTE: Image by CloudScope was used for the players' profile_**
 
 
 
   
-
-
 
 
 
