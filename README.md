@@ -290,7 +290,7 @@ The insights gained from this dataset are the following:
 
 ## Visualization
 
-The visualization is two-phased: The insight main phase, which contains the Analysis, and the profile phase where the players' profiles are visualized. find below the video illustration
+The visualization is two-phased: The insight main phase, which contains the Analysis, and the profile phase where the players' profiles are visualized. find below the video illustration 
 
 
 
