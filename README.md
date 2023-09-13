@@ -18,7 +18,7 @@ The FIFA 21 dataset contains 18,979 rows and 77 columns. The dataset included va
 
 - What is the contract duration years?
 - What players are on loan or free contract?
-- What are the players' values, Wages, and Release clause in Dollars?
+- What are the players' values, Wages, and Release clauses in Dollars?
 - What are the players’ heights in (cm) and Weights in (lbs)?
 
 
